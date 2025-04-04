@@ -9,6 +9,7 @@
     <div class="header">
         <header>
             <link rel="stylesheet" href="style.css">
+            <script src="script.js"></script>
             <nav>
                 <p>Template</p> 
                 <a href="index.html">Home</a>
@@ -30,22 +31,43 @@
         <div class="Heading1">
             <h2>Heading1</h2>
             <p>Other words</p>
-            <button href="index.html">Learn More</button>
+            <button onclick="openForm()">Learn More</button>
         </div>
         
         <div class="Heading2">
             <h2>Heading2</h2>
             <p>These words</p>
-            <button href="index.html">Learn More</button>
+            <button onclick="openForm()">Learn More</button>
         </div>
 
         <div class="Heading3">
             <h2>Heading3</h2>
             <p>Them words</p>
-            <button href="index.html">Learn More</button>
+            <button onclick="openForm()">Learn More</button>
         </div> 
-
     </Div>
+
+    <div class="formpop" id="myform">
+        <form action="" class="formcontainer">
+            <h1>Contact Us</h1>
+
+            <label for="Name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="Name" required>
+
+            <label for="Email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="Email" required>
+
+            <label for="Reason"><b>Reason for Contact</b></label>
+            <textarea name="Reason" placeholder="Enter Reason" rows="4" cols="50"></textarea>
+            
+            <label for="Acceptance"><b>Acceptance of Terms & Conditions: </b></label>
+            <input type="checkbox" name="Acceptance" required>
+            
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+        </form>
+    </div>
     
 </body>
 </html>
