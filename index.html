@@ -52,13 +52,13 @@
             <h1>Contact Us</h1>
 
             <label for="Name"><b>Name</b></label>
-            <input type="text" placeholder="Enter Name" name="Name" required>
+            <input type="text" placeholder="Enter Name" name="Name" minlength="5">
 
             <label for="Email"><b>Email</b></label>
             <input type="text" placeholder="Enter Email" name="Email" required>
 
             <label for="Reason"><b>Reason for Contact</b></label>
-            <textarea name="Reason" placeholder="Enter Reason" rows="4" cols="50"></textarea>
+            <textarea name="Reason" placeholder="Enter Reason" rows="4" cols="50" minlength="5" maxlength="500"></textarea>
             
             <label for="Acceptance"><b>Acceptance of Terms & Conditions: </b></label>
             <input type="checkbox" name="Acceptance" required>
