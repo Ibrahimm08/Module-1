@@ -55,8 +55,9 @@ Used across all pages
     color: gainsboro;
 }
 
+/* Title is used across multiple pages */
 
-.aboutInfo{
+.Title{
     background-color: gainsboro;
     border-bottom: none;
     box-shadow: inset 0px -40px 40px 40px white;
@@ -70,6 +71,8 @@ Used across all pages
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* CSS for about.html */
 
 .Languages{
     text-align: left;
@@ -86,4 +89,32 @@ Used across all pages
 }
 th,td{
     border: 1px solid black;
+}
+
+/* CSS for index.html */
+
+.Headings{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Heading1,.Heading2,.Heading3{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    width: 100%;
+    float: left;
+
+}
+.Heading1 button,.Heading2 button,.Heading3 button{
+    margin-left: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: 0;
+    background-color: #0070fe;
+    color: white;
+    scale: 120%;
 }
